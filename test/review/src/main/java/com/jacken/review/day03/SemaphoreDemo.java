@@ -15,7 +15,7 @@ public class SemaphoreDemo {
     public static void main(String[] args) {
         //三个停车位 非公平锁
         Semaphore  semaphore=new Semaphore(1,true);
-        for (int i = 1; i <=100; i++) {
+        for (int i = 1; i <=6; i++) {
             new Thread(()->{
                 try {
                     //获得停车位
